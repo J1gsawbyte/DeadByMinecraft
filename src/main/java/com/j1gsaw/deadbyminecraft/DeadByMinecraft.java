@@ -31,7 +31,7 @@ public final class DeadByMinecraft extends JavaPlugin {
         waitingPlayers = new ArrayList<>();
         survivorMap = new HashMap<>();
         //注册命令
-
+        say('c', "1");
     }
 
     @Override
