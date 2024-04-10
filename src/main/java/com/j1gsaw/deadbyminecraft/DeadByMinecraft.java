@@ -19,7 +19,7 @@ public final class DeadByMinecraft extends JavaPlugin {
     private FileConfiguration config;                   //config配置文件
     private List<Player> waitingPlayers;                //等待用户池
     private Killer killer = null;                       //杀手
-    private static Map<Player, Survivor> survivorMap;          //逃生者们
+    private static Map<Player, Survivor> survivorMap;   //逃生者们
     private static boolean isStart = false;
 
     @Override
