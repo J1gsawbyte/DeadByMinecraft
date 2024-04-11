@@ -15,6 +15,17 @@ public class KillerAttackEvent extends Event {
         this.isOnSurvivor = isOnSurvivor;
     }
 
+    //-----------------------------------------------GET-----------------------------------------------//
+
+    public boolean getIsOnSuvivor() {
+        return this.isOnSurvivor;
+    }
+    public Killer getKiller() {
+        return this.killer;
+    }
+
+    //-----------------------------------------------GET-----------------------------------------------//
+
     private static final HandlerList handlers = new HandlerList();
     public static HandlerList getHandlerList() {
         return handlers;

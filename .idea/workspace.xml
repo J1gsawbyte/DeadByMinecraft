@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Events/KillerAttackEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Listener/Main/KillerAttackListener.java" afterDir="false" />
+    <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="添加KillerAttackEvent和对应的Listener&#10;完善KillerAttackEvent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Events/KillerAttackEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Events/KillerAttackEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,26 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DBM",
-    "settings.editor.selected.configurable": "inlay.hints"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DBM&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ],
-    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
-      "17=C:/Program Files/Java/jdk-17"
+    &quot;jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: [
+      &quot;17=C:/Program Files/Java/jdk-17&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -110,11 +109,20 @@
       <option name="project" value="LOCAL" />
       <updated>1712745107273</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加KillerAttackEvent和对应的Listener&#10;完善KillerAttackEvent">
+      <option name="closed" value="true" />
+      <created>1712809147469</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712809147469</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="添加KillerAttackEvent和对应的Listener&#10;完善KillerAttackEvent" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加KillerAttackEvent和对应的Listener&#10;完善KillerAttackEvent" />
   </component>
 </project>
