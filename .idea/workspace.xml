@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Events/KillerAttackEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Listener/Main/KillerAttackListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/DeadByMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/DeadByMinecraft.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,9 +58,13 @@
     "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/DBM",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "inlay.hints"
   },
   "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "module"
+    ],
     "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
       "17=C:/Program Files/Java/jdk-17"
     ]
@@ -90,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712732585494</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <option name="closed" value="true" />
+      <created>1712745107273</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712745107273</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
