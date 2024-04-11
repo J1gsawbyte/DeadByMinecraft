@@ -1,4 +1,4 @@
-package com.j1gsaw.deadbyminecraft.Killer.Events;
+package com.j1gsaw.deadbyminecraft.Killer.Events.KillerAttackEvents;
 
 import com.j1gsaw.deadbyminecraft.Killer.Killer;
 import org.bukkit.event.Event;
