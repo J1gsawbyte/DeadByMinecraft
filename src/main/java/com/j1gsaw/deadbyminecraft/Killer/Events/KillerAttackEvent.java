@@ -17,7 +17,7 @@ public class KillerAttackEvent extends Event {
 
     //-----------------------------------------------GET-----------------------------------------------//
 
-    public boolean getIsOnSuvivor() {
+    public boolean getIsOnSurvivor() {
         return this.isOnSurvivor;
     }
     public Killer getKiller() {
