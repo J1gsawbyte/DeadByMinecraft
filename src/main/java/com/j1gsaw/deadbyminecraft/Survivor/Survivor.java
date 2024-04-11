@@ -10,7 +10,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Survivor {
+    //------------------------------------------player-------------------------------------------
+    //*****************************************player对象*****************************************
     private Player player;
+
+    /**
+     * 重定向player.getName()获取名字
+     * @return 逃生者的名字
+     */
+    public String getName() {
+        return this.player.getName();
+    }
 
     public Survivor(Player player) {
         this.player = player;
@@ -170,6 +180,42 @@ public class Survivor {
         Bukkit.getPluginManager().callEvent(new SurvivorWalkSpeedChangeEvent(this, player));
     }
 
+    //-------------------------------------afterAttackWalkSpeed-----------------------------------
+    //***************************************逃生者的被攻击后移速************************************
+    private float afterAttackWalkSpeed = 1.6f;
+    /**
+     * 获取逃生者被攻击后的移动速度
+     * @return 逃生者被攻击后的移动速度
+     */
+    public float getAfterAttackWalkSpeed() {
+        return afterAttackWalkSpeed;
+    }
+    /**
+     * 设置逃生者被攻击后的移动速度
+     * @param newAfterAttackWalkSpeed  新逃生者被攻击后的移动速度
+     */
+    public void setAfterAttackWalkSpeed(float newAfterAttackWalkSpeed) {
+        this.afterAttackWalkSpeed = newAfterAttackWalkSpeed;
+    }
+
+    //------------------------------------afterAttackAccelerateTime-------------------------------------
+    //****************************************逃生者的被攻击后加速时间***************************************
+    private float afterAttackAccelerateTime = 2.0f;
+    /**
+     * 获取逃生者的被攻击后加速时间(秒)
+     * @return 逃生者的被攻击后加速时间(秒)
+     */
+    public float getAfterAttackAccelerateTime() {
+        return afterAttackAccelerateTime;
+    }
+    /**
+     * 设置逃生者的被攻击后加速时间(秒)
+     * @param seconds 新逃生者的被攻击后加速时间(秒)
+     */
+    public void setAfterAttackAccelerateTime(float seconds) {
+        this.afterAttackAccelerateTime = seconds;
+    }
+
     //------------------------------------------fixingSpeed-----------------------------------------
     //***************************************逃生者的修理电机速度***************************************
     private int fixingSpeed = 1;
@@ -208,7 +254,7 @@ public class Survivor {
 
     //--------------------------------------recoverSelfSpeed-------------------------------------
     //**************************************逃生者的自我恢复速度*************************************
-    private int recoverSelfSpeed = 1;
+    private int recoverSelfSpeed = 0;
 
     /**
      * 获取逃生者的自我恢复速度
@@ -264,7 +310,7 @@ public class Survivor {
 
     //-------------------------------------blessingTotemSpeed------------------------------------
     //**************************************逃生者的祝福图腾速度*************************************
-    private int blessingTotemSpeed = 1;
+    private int blessingTotemSpeed = 0;
 
     /**
      * 获取逃生者的祝福图腾速度
@@ -298,7 +344,7 @@ public class Survivor {
     public void setSacrificeSpeed(int newSacrificeSpeed) {
         this.sacrificeSpeed = newSacrificeSpeed;
     }
-    ///-------------------------------------------------------------------------------------------------------//
+    //-------------------------------------------------------------------------------------------------------//
 
     //-----------------------------------------------hookState------------------------------------------------
     //**********************************************逃生者的上钩阶段*********************************************
@@ -324,7 +370,6 @@ public class Survivor {
     public SurvivorHookState getHookState() {
         return hookState;
     }
-
 }
 
 

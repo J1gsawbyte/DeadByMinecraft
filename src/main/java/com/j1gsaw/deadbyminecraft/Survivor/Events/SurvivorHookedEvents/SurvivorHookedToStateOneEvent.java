@@ -11,6 +11,10 @@ public class SurvivorHookedToStateOneEvent extends Event {
         this.survivor = survivor;
     }
 
+    public Survivor getSurvivor() {
+        return this.survivor;
+    }
+
     private static final HandlerList handlers = new HandlerList();
     public static HandlerList getHandlerList() {
         return handlers;

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="完善KillerAttackEvent&#10;添加Get" />
+    <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="更新位置">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorGotHookedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorGotHookedListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateOneListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateOneEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateOneEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedToFallenListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedListeners/SurvivorAttackedToFallenListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedToWoundedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedListeners/SurvivorAttackedToWoundedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorGotAttackedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedListeners/SurvivorGotAttackedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Survivor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Survivor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,13 +140,22 @@
       <option name="project" value="LOCAL" />
       <updated>1712811106845</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新位置">
+      <option name="closed" value="true" />
+      <created>1712811777706</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712811777706</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="添加KillerAttackEvent和对应的Listener&#10;完善KillerAttackEvent" />
     <MESSAGE value="完善KillerAttackEvent&#10;添加Get" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善KillerAttackEvent&#10;添加Get" />
+    <MESSAGE value="更新位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新位置" />
   </component>
 </project>
