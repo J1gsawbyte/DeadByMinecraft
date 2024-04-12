@@ -5,11 +5,16 @@ import com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorSpeedsChangeEvents.Sur
 import com.j1gsaw.deadbyminecraft.Survivor.Exception.SurvivorOperationFailedException;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitTask;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Survivor {
+
     //------------------------------------------player-------------------------------------------
     //*****************************************player对象*****************************************
     private Player player;
@@ -22,8 +27,9 @@ public class Survivor {
         return this.player.getName();
     }
 
-    public Survivor(Player player) {
+    public Survivor(Plugin plugin, Player player) {
         this.player = player;
+
     }
 
     //----------------------------------static_survivor_counts----------------------------------
@@ -131,6 +137,11 @@ public class Survivor {
             return DeadByMinecraft.findSurvivorByPlayer(player);
         }
     }
+
+    //-----------------------------------static_survivor_tasks-----------------------------------
+    //**************************************逃生者复杂任务并发***************************************
+    public static Map<Survivor, BukkitTask> static_survivor_tasks = new HashMap<>();
+
 
     //------------------------------------------HealthState------------------------------------------
     //*****************************************逃生者的健康状态*****************************************
@@ -370,6 +381,25 @@ public class Survivor {
     public SurvivorHookState getHookState() {
         return hookState;
     }
+
+    //-----------------------------------------------isHooked-----------------------------------------------
+    //**********************************************逃生者是否上钩*********************************************
+    private boolean isHooked = false;
+    /**
+     * 设置逃生者是否上钩
+     * @param b 是否上钩
+     */
+    public void setIsHooked(boolean b) {
+        this.isHooked = b;
+    }
+    /**
+     * 获取逃生者是否上钩
+     * @return 逃生者是否上钩
+     */
+    public boolean getIsHooked() {
+        return this.isHooked;
+    }
+
 }
 
 

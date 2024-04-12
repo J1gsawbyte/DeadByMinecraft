@@ -28,5 +28,6 @@ public class SurvivorGotHookedListener implements Listener {
             default:
                 throw new SurvivorOperationFailedException("onSurvivorGotHooked", event.getSurvivor().getName() + "有错误的上钩阶段");
         }
+        event.getSurvivor().setIsHooked(true);
     }
 }

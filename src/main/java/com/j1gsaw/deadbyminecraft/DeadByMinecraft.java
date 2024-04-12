@@ -6,6 +6,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ import java.util.Map;
 
 public final class DeadByMinecraft extends JavaPlugin {
 
+    private static DeadByMinecraft plugin;
     private static Location mainLocation;
     private FileConfiguration config;                   //config配置文件
     private List<Player> waitingPlayers;                //等待用户池
@@ -24,6 +26,8 @@ public final class DeadByMinecraft extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        plugin = this;
+
         say('a', "DeadByDaylight enabled");
         //主城location
         mainLocation = new Location(Bukkit.getWorld("main"), 0, 60, 0);
@@ -38,6 +42,12 @@ public final class DeadByMinecraft extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
     }
+
+    public static DeadByMinecraft getInstance() {
+        return plugin;
+    }
+
+
 
     public static Survivor findSurvivorByPlayer(Player player) {
         if(!survivorMap.isEmpty()) {
