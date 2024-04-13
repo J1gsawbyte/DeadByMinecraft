@@ -1,4 +1,4 @@
-package com.j1gsaw.deadbyminecraft.Survivor.Events;
+package com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorTimerEvents;
 
 import com.j1gsaw.deadbyminecraft.ExtraRunnable.BooleanRunnable;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;

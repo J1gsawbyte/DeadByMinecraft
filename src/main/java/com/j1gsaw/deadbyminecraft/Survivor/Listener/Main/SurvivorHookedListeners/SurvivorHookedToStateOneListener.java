@@ -1,7 +1,7 @@
 package com.j1gsaw.deadbyminecraft.Survivor.Listener.Main.SurvivorHookedListeners;
 
 import com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorHookedEvents.SurvivorHookedToStateOneEvent;
-import com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorTimerEvent;
+import com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorTimerEvents.SurvivorTimerEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;

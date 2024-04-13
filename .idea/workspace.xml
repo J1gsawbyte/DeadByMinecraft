@@ -4,20 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="Coding">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/ExtraRunnable/BooleanRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Exception/KillerOperationFailedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorTimerEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateTwoListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorTimerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="Survivor">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorGotRescuedFromHookListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStageThreeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/TimerListener/SurvivorTimerListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/DeadByMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/DeadByMinecraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateTwoEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateTwoEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorGotRescuedFormHookEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorGotRescuedFormHookEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorTimerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorTimerEvents/SurvivorTimerEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorGotHookedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorGotHookedListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateOneListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateOneListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateTwoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateTwoListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorTimerListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Survivor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Survivor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DeadByMinecraft-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DeadByMinecraft-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/DeadByMinecraft.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/DeadByMinecraft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateOneEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateOneEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateTwoEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateTwoEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedToFallenListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedToWoundedListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorGotAttackedListener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorGotAttackedListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor$HealthStateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor$HealthStateType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor$SurvivorHookState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor$SurvivorHookState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-DeadByMinecraft-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-DeadByMinecraft-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,28 +73,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.DeadByMinecraft [org.apache.maven.plugins:maven-jar-plugin:3.3.0:jar].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DBM",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.DeadByMinecraft [org.apache.maven.plugins:maven-jar-plugin:3.3.0:jar].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DeadByMinecraft [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DeadByMinecraft.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DBD/Core/DeadByDaylight&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ],
-    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
-      "17=C:/Program Files/Java/jdk-17"
+    &quot;jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: [
+      &quot;17=C:/Program Files/Java/jdk-17&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="DeadByMinecraft [package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -156,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712850105951</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Survivor">
+      <option name="closed" value="true" />
+      <created>1712926939029</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712926939029</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,6 +219,7 @@
     <MESSAGE value="完善KillerAttackEvent&#10;添加Get" />
     <MESSAGE value="更新位置" />
     <MESSAGE value="Coding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coding" />
+    <MESSAGE value="Survivor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Survivor" />
   </component>
 </project>

@@ -140,8 +140,28 @@ public class Survivor {
 
     //-----------------------------------static_survivor_tasks-----------------------------------
     //**************************************逃生者复杂任务并发***************************************
-    public static Map<Survivor, BukkitTask> static_survivor_tasks = new HashMap<>();
-
+    private static Map<Integer, BukkitTask> static_survivor_tasks = new HashMap<>();
+    /**
+     * 注册新计时任务
+     * @param task 新计时任务
+     * @return 该任务的id
+     */
+    public static int registerSurvivorTask(BukkitTask task) {
+        static_survivor_tasks.put(static_survivor_tasks_id, task);
+        return static_survivor_tasks_id++;
+    }
+    /**
+     * 删除计时任务注册
+     * @param taskid 任务的id
+     * @return 是否删除成功
+     */
+    public static boolean unregisterSurvivorTask(int taskid) {
+        if(static_survivor_tasks.remove(taskid) == null) {
+            return false;
+        }
+        return true;
+    }
+    private static int static_survivor_tasks_id = 0;
 
     //------------------------------------------HealthState------------------------------------------
     //*****************************************逃生者的健康状态*****************************************

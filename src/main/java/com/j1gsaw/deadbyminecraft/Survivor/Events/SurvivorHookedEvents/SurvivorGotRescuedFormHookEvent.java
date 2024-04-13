@@ -8,10 +8,20 @@ import org.bukkit.event.HandlerList;
  * 逃生者从钩子上被救下
  */
 public class SurvivorGotRescuedFormHookEvent extends Event {
-    private Survivor survivor;
+    private Survivor survivor_rescuer;
+    private Survivor survivor_rescued;
 
-    public SurvivorGotRescuedFormHookEvent(Survivor survivor) {
-        this.survivor = survivor;
+    public SurvivorGotRescuedFormHookEvent(Survivor rescuer, Survivor rescued) {
+        this.survivor_rescuer = rescuer;
+        this.survivor_rescued = rescued;
+    }
+
+    public Survivor getSurvivor_rescued() {
+        return survivor_rescued;
+    }
+
+    public Survivor getSurvivor_rescuer() {
+        return survivor_rescuer;
     }
 
     private static final HandlerList handlers = new HandlerList();
