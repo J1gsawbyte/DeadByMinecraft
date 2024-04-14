@@ -1,11 +1,14 @@
 package com.j1gsaw.deadbyminecraft.Survivor.Listener.Main.TimerListener;
 
+import com.j1gsaw.deadbyminecraft.DEvents.DSEvent;
 import com.j1gsaw.deadbyminecraft.DeadByMinecraft;
 import com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorTimerEvents.SurvivorTimerEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Exception.SurvivorOperationFailedException;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;
 import org.bukkit.Bukkit;
+import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.scheduler.BukkitTask;
 
@@ -42,31 +45,34 @@ public class SurvivorTimerListener implements Listener {
                 Math.round(event.getTime() * 20)
         );
         //注册task
-        taskID.set(Survivor.registerSurvivorTask(task));
+        taskID.set(
+                Survivor.registerSurvivorTask(task)
+        );
+
         //有中断
-        if (event.getInterruptMainfuncCondition() != null) {
-            new Thread(() ->{
-                while (true) {
-                    //如果中断条件符合 并且 主函数没有执行完  则取消主函数运行 删除注册 执行中断函数
-                    if (event.getInterruptMainfuncCondition().run() && isMainfuncFinish.get()) {
-                        Bukkit.getScheduler().runTask(DeadByMinecraft.getInstance(),
-                            () -> {
-                                task.cancel();
-                                Survivor.unregisterSurvivorTask(taskID.get());
-                                event.getEndfunc().run();
-                             });
-                        break;
+        if(event.getInterruptEventType() != null) {
+            //监听中断事件
+            Bukkit.getPluginManager().registerEvents(new Listener() {
+                @EventHandler
+                public void onInterrupt(Event interruptEvent) {
+                    //如果主函数已经结束
+                    if(isMainfuncFinish.get()) {
+                        HandlerList.unregisterAll(this);
+                        return;
                     }
-                    //如果主函数执行完 则 退出
-                    else if (isMainfuncFinish.get()) {
-                        break;
-                    }
-                    //如果触发异常 则 退出
-                    else if (this.exception == null) {
-                        break;
+                    //如果监听到中断事件类型
+                    if(interruptEvent.getClass().equals(event.getInterruptEventType())) {
+                        //并且操作的都是同一个survivor
+                        if(((DSEvent) event.getInterruptEventType().cast(interruptEvent)).getSurvivor().equals(event.getSurvivor())) {
+                            task.cancel();
+                            Survivor.unregisterSurvivorTask(taskID.get());
+                            event.getEndfunc().run();
+                            HandlerList.unregisterAll(this); // 取消监听中断事件
+                        }
                     }
                 }
-            }).start();
+            }, DeadByMinecraft.getInstance()
+            );
         }
     }
 }

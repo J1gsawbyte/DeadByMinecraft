@@ -4,32 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="Survivor">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorGotRescuedFromHookListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStageThreeListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/TimerListener/SurvivorTimerListener.java" afterDir="false" />
+    <list default="true" id="8ed1f137-d593-48e8-b06f-325817d5d22e" name="更改" comment="延迟任务完善">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/DEvents/DKEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/DEvents/DSEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/DeadByMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/DeadByMinecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Events/KillerAttackEvents/KillerAttackEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Killer/Events/KillerAttackEvents/KillerAttackEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorAttackedEvents/SurvivorAttackedToFallenEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorAttackedEvents/SurvivorAttackedToFallenEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorAttackedEvents/SurvivorAttackedToWoundedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorAttackedEvents/SurvivorAttackedToWoundedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorAttackedEvents/SurvivorGotAttackedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorAttackedEvents/SurvivorGotAttackedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorGotHookedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorGotHookedEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorGotRescuedFormHookEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorGotRescuedFormHookEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorTimerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorTimerEvents/SurvivorTimerEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorGotHookedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorGotHookedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateOneEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateOneEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateThreeEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateThreeEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateTwoEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateTwoEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorRecoverEvents/SurvivorRecoverToHealthEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorRecoverEvents/SurvivorRecoverToHealthEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorRecoverEvents/SurvivorRecoverToWoundedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorRecoverEvents/SurvivorRecoverToWoundedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorSpeedsChangeEvents/SurvivorWalkSpeedChangeEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorSpeedsChangeEvents/SurvivorWalkSpeedChangeEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorTimerEvents/SurvivorTimerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorTimerEvents/SurvivorTimerEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateOneListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateOneListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateTwoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorHookedListeners/SurvivorHookedToStateTwoListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorTimerListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Survivor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Survivor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DeadByMinecraft-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DeadByMinecraft-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/DeadByMinecraft.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/DeadByMinecraft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateOneEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateOneEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateTwoEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Events/SurvivorHookedEvents/SurvivorHookedToStateTwoEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedToFallenListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorAttackedToWoundedListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorGotAttackedListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/SurvivorGotAttackedListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor$HealthStateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor$HealthStateType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor$SurvivorHookState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor$SurvivorHookState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/j1gsaw/deadbyminecraft/Survivor/Survivor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-DeadByMinecraft-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-DeadByMinecraft-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/TimerListener/SurvivorTimerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/j1gsaw/deadbyminecraft/Survivor/Listener/Main/TimerListener/SurvivorTimerListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712926939029</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="延迟任务完善">
+      <option name="closed" value="true" />
+      <created>1712981087037</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712981087037</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,6 +222,7 @@
     <MESSAGE value="更新位置" />
     <MESSAGE value="Coding" />
     <MESSAGE value="Survivor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Survivor" />
+    <MESSAGE value="延迟任务完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="延迟任务完善" />
   </component>
 </project>

@@ -1,14 +1,14 @@
 package com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorRecoverEvents;
 
+import com.j1gsaw.deadbyminecraft.DEvents.DSEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class SurvivorRecoverToHealthEvent extends Event {
+public class SurvivorRecoverToHealthEvent extends DSEvent {
     private Survivor survivor;
 
     public SurvivorRecoverToHealthEvent(Survivor survivor) {
-        this.survivor = survivor;
+        super(survivor);
     }
 
 

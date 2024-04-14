@@ -1,16 +1,15 @@
 package com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorTimerEvents;
 
-import com.j1gsaw.deadbyminecraft.ExtraRunnable.BooleanRunnable;
+import com.j1gsaw.deadbyminecraft.DEvents.DSEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class SurvivorTimerEvent extends Event {
+public class SurvivorTimerEvent extends DSEvent {
 
-    private Survivor survivor;
     private Runnable mainfunc;
     private float time;
-    private BooleanRunnable interruptMainfuncCondition;
+    private Class<? extends DSEvent> interruptEventType;
     private Runnable endfunc;
 
     /**
@@ -20,10 +19,10 @@ public class SurvivorTimerEvent extends Event {
      * @param time 时间(秒)
      */
     public SurvivorTimerEvent(Survivor survivor, Runnable runnable, float time) {
+        super(survivor);
         this.mainfunc = runnable;
-        this.survivor = survivor;
         this.time = time;
-        this.interruptMainfuncCondition = null;
+        this.interruptEventType = null;
         this.endfunc = null;
     }
 
@@ -32,20 +31,17 @@ public class SurvivorTimerEvent extends Event {
      * @param survivor 逃生者
      * @param runnable 计时结束执行的函数
      * @param time 时间(秒)
-     * @param interruptMainfuncCondition 结束条件
+     * @param interruptEventType 中断事件类型
      * @param endfunc 中断函数
      */
-    public SurvivorTimerEvent(Survivor survivor, Runnable runnable, float time, BooleanRunnable interruptMainfuncCondition, Runnable endfunc) {
+    public SurvivorTimerEvent(Survivor survivor, Runnable runnable, float time, Class<? extends DSEvent> interruptEventType, Runnable endfunc) {
+        super(survivor);
         this.mainfunc = runnable;
-        this.survivor = survivor;
         this.time = time;
-        this.interruptMainfuncCondition = interruptMainfuncCondition;
+        this.interruptEventType = interruptEventType;
         this.endfunc = endfunc;
     }
 
-    public Survivor getSurvivor() {
-        return this.survivor;
-    }
 
     public Runnable getMainfunc() {
         return this.mainfunc;
@@ -55,8 +51,8 @@ public class SurvivorTimerEvent extends Event {
         return time;
     }
 
-    public BooleanRunnable getInterruptMainfuncCondition() {
-        return this.interruptMainfuncCondition;
+    public Class<? extends Event> getInterruptEventType() {
+        return this.interruptEventType;
     }
 
     public Runnable getEndfunc() {

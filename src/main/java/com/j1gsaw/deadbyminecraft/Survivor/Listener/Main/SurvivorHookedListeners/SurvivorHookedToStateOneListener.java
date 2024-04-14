@@ -1,5 +1,6 @@
 package com.j1gsaw.deadbyminecraft.Survivor.Listener.Main.SurvivorHookedListeners;
 
+import com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorHookedEvents.SurvivorGotRescuedFormHookEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorHookedEvents.SurvivorHookedToStateOneEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorTimerEvents.SurvivorTimerEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;
@@ -22,10 +23,8 @@ public class SurvivorHookedToStateOneListener implements Listener {
                 },
                 //延迟时间
                 30,
-                //中断条件
-                () -> {
-                    return !event.getSurvivor().getIsHooked();
-                },
+                //中断事件
+                SurvivorGotRescuedFormHookEvent.class,
                 //中断函数
                 () -> {
 

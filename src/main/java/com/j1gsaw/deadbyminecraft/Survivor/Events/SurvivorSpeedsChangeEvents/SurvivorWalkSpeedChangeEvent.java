@@ -1,17 +1,17 @@
 package com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorSpeedsChangeEvents;
 
+import com.j1gsaw.deadbyminecraft.DEvents.DSEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class SurvivorWalkSpeedChangeEvent extends Event {
+public class SurvivorWalkSpeedChangeEvent extends DSEvent {
 
     private Survivor survivor;
     private Player player;
 
     public SurvivorWalkSpeedChangeEvent(Survivor survivor, Player player) {
-        this.survivor = survivor;
+        super(survivor);
         this.player = player;
     }
 

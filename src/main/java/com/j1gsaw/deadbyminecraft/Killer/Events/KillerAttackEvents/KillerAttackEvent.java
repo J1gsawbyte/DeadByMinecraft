@@ -4,7 +4,7 @@ import com.j1gsaw.deadbyminecraft.Killer.Killer;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class KillerAttackEvent extends Event {
+public class KillerAttackEvent extends Event{
 
     private boolean isOnSurvivor;
 

@@ -1,19 +1,21 @@
-package com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorHookedEvents;
+package com.j1gsaw.deadbyminecraft.DEvents;
 
-import com.j1gsaw.deadbyminecraft.DEvents.DSEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;
+import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class SurvivorGotHookedEvent extends DSEvent {
-
+/**
+ * 本插件中所有Event都继承DEvent
+ */
+public class DSEvent extends Event {
     private Survivor survivor;
 
-    public SurvivorGotHookedEvent(Survivor survivor) {
-        super(survivor);
+    public Survivor getSurvivor() {
+        return survivor;
     }
 
-    public Survivor getSurvivor() {
-        return this.survivor;
+    public DSEvent(Survivor survivor) {
+        this.survivor = survivor;
     }
 
     private static final HandlerList handlers = new HandlerList();

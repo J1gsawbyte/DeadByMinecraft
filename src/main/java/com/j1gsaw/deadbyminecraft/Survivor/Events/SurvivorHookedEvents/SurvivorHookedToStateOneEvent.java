@@ -1,14 +1,14 @@
 package com.j1gsaw.deadbyminecraft.Survivor.Events.SurvivorHookedEvents;
 
+import com.j1gsaw.deadbyminecraft.DEvents.DSEvent;
 import com.j1gsaw.deadbyminecraft.Survivor.Survivor;
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class SurvivorHookedToStateOneEvent extends Event {
+public class SurvivorHookedToStateOneEvent extends DSEvent {
     private Survivor survivor;
 
     public SurvivorHookedToStateOneEvent(Survivor survivor) {
-        this.survivor = survivor;
+        super(survivor);
     }
 
     public Survivor getSurvivor() {
